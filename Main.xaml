@@ -97,7 +97,7 @@
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
           <InArgument x:TypeArguments="x:String">Chicago</InArgument>
           <InArgument x:TypeArguments="x:String">New York</InArgument>
-          <InArgument x:TypeArguments="x:String">San Francisco</InArgument>
+          <InArgument x:TypeArguments="x:String">San Diego</InArgument>
         </scg:List>
       </uasc:BuildCollection.NextItems>
     </uasc:BuildCollection>
@@ -107,6 +107,7 @@
           <InArgument x:TypeArguments="x:String">Manchester</InArgument>
           <InArgument x:TypeArguments="x:String">Bristol</InArgument>
           <InArgument x:TypeArguments="x:String">Edinburgh</InArgument>
+          <InArgument x:TypeArguments="x:String">Cambridge</InArgument>
         </scg:List>
       </uasc:BuildCollection.NextItems>
     </uasc:BuildCollection>
@@ -123,7 +124,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uasc:AppendItemToCollection>
-    <uasc:RemoveFromCollection x:TypeArguments="x:String" Index="{x:Null}" Collection="[Cities(&quot;UK&quot;)]" DisplayName="Remove London from UK Cities" sap:VirtualizedContainerService.HintSize="450,252" sap2010:WorkflowViewState.IdRef="RemoveFromCollection`1_2" Item="London" RemoveAllElements="False" Result="[Cities(&quot;UK&quot;)]" />
+    <uasc:RemoveFromCollection x:TypeArguments="x:String" Index="{x:Null}" Item="{x:Null}" Collection="[Cities(&quot;UK&quot;)]" DisplayName="Remove London from UK Cities" sap:VirtualizedContainerService.HintSize="450,252" sap2010:WorkflowViewState.IdRef="RemoveFromCollection`1_2" RemoveAllElements="False" />
     <ui:LogMessage DisplayName="Print Resulting US and UK cities" sap:VirtualizedContainerService.HintSize="450,117" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;US Cities : &quot;+ String.Join(&quot;, &quot;,Cities(&quot;US&quot;)) + vbLf + &quot;and&quot; + vbLf + &quot;UK Cities : &quot;+ String.Join(&quot;, &quot;,Cities(&quot;UK&quot;))]" />
   </Sequence>
 </Activity>
